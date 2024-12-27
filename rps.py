@@ -53,7 +53,7 @@ def Compare(x,y):
     else:
         print("Not Defined")
 
-def clear_screen(): 
+def ClearScreen(): 
     if os.name == 'nt': # For Windows 
         os.system('cls')
     else: # For Linux and Mac 
@@ -62,7 +62,7 @@ def clear_screen():
 def main():
     varloop = 1
     while  varloop == 1: 
-        os.system("CLS")
+        ClearScreen()
         print ("PAPAN SCORE")
         print ("------------------------------")
         print("WIN  : ",userWinPoint)
@@ -87,11 +87,11 @@ def main():
                 z = input("Ingin Melanjutkan Permainan (Y/N)? ")
                 if z == "N" or z == "n":
                     varloop = 0
-                     clear_screen()
+                    ClearScreen()
                 else:
-                    clear_screen()
+                    ClearScreen()
             else:
-                 clear_screen()
+                 ClearScreen()
         else:
              os.system("CLS")
     #after while
